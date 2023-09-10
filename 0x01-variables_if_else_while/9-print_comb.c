@@ -14,8 +14,7 @@ for (j = 0; j <= 9; j++)
 putchar(i + '0');
 putchar(',');
 putchar(' ');
-putchar(j + '0');
-putchar(' ');
+putchar(j + '0'+"\t");
 }
 }
 
