@@ -1,9 +1,8 @@
 #include <stdio.h>
-
-/*
- * main - entry pint
- * Description: print alphabetic in lowercase then in uppercase
- * Return: 0 (success)
+/**
+ *main -Entry point
+ *Return: 0 (Success)
+ *Description: print alphabetic in lowercase then in uppercase
  */
 int main(void)
 {
