@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/*
- * function main - entry piont of th code.
- * Description: print the value of n status greater than , is zero and is not  less 6.
- * Return: 0 (success)
+/**
+ *main -Entry point
+ *Return: 0 (Success)
+ *Description: show if the rand number greater than 5 or is 0 or is less than 6 and not equal 0
  */
-
 int main(void)
 {
 	int n, digit;
@@ -17,10 +15,10 @@ int main(void)
 	digit = n % 10;
 
 	if (digit > 5)
-		printf("Last digit of %i is %i and is greater than 5 \n", n, digit);
+		printf("Last digit of %i is %i and is greater than 5\n", n, digit);
 	else if (digit == 0)
 		printf("Last digit of %i is %i and is 0\n", n, digit);
 	else if (digit < 6 && digit != 0)
-		printf("Last digit of %i is %i and is less than 6 and not 0 \n", n, digit);
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);
 	return (0);
 }
