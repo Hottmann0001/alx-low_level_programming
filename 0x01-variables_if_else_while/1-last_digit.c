@@ -4,7 +4,7 @@
 /**
  *main -Entry point
  *Return: 0 (Success)
- *Description: show if the rand number greater than 5 or is 0 or is less than 6 and not equal 0
+ *Description: show number greater than 5 or 0 or less than 6 and not equal 0
  */
 int main(void)
 {
