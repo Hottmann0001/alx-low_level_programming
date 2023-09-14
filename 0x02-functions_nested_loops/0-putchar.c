@@ -2,13 +2,12 @@
 #include <stdio.h>
 /**
  * main - main function .
- *
- * Return: 0
+ *Description: prints _putchar using putchar prototype
+ * Return: always 0
  */
 int main(void)
 {
 	char h[] = "_putchar";
-	int s = sizeof(h);
 	int i;
 
 	for (i = 0; i < s; i++)
