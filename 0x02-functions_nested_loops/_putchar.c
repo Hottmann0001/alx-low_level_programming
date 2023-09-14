@@ -1,11 +1,9 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _putchar - Writes a character to the standard output (stdout).
- * @c: The character to be written.
- *
- * Return: On success, returns the character written as an unsigned char.
- *         On error, returns -1.
+ * _putchar -write the char c to stdout
+ * @c: the char to print
+ * Return: On success 1.
  */
 int _putchar(char c)
 {
