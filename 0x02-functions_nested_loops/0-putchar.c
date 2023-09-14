@@ -1,17 +1,16 @@
 #include "main.h"
 /**
- *main -Entry point
- *Return: 0 (Success)
- *Description: prints _putchar, followed by a new line.
- */
-int main(void)
+*print_alphabet - function that print alphabet
+*it prints in lowercase
+*Return: no return
+*/
+void print_alphabet(void)
 {
-int ch;
-char str[] = "_putchar";
-for (ch = 0; ch < 8; ch++)
+int letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-_putchar(str[ch]);
+_putchar (letter);
 }
-_putchar('\n');
-return (0);
+_putchar (10);
+
 }
