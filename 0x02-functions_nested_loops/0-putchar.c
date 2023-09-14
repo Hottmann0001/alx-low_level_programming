@@ -1,16 +1,11 @@
 #include "main.h"
+#include <unistd.h>
 /**
-*print_alphabet - function that print alphabet
-*it prints in lowercase
+*_putchar - write the char c to stdout
+*@c: The character to print
 *Return: no return
 */
-void print_alphabet(void)
+int _putchar(char c)
 {
-int letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-{
-_putchar (letter);
-}
-_putchar (10);
-return (0);
+return (write(1, &c, 1));
 }
