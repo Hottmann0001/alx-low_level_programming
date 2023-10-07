@@ -4,47 +4,47 @@
 
 /**
  * *argstostr - convert arguments on command line to strings
+ *
  * @ac: int type
+ *
  * @av: pointer to array
- * Return: arguments as strings
+ *
+ * Return: args as strings
  */
 
 char *argstostr(int ac, char **av)
 {
-	int size, count, count1, count2 = 0;
-	char *ptr;
+	int counter1, counter2, counter3 = 0;
+	char *strTemp;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 
-	for (count = 0; count < ac; count++)
+	for (counter1 = 0; counter1 < ac; counter1++)
 	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
+		for (counter2 = 0; av[counter1][counter2] != '\0'; counter2++, counter3++)
 		{
-			size += 1;
+			;
 		}
-		size += 1;
 	}
-	size += 1;
 
-	ptr = malloc(sizeof(char) * size);
-	if (ptr == NULL)
+	strTemp = malloc(sizeof(char) * (counter3 + ac + 1));
+
+	if (strTemp == NULL)
 	{
-		free(ptr);
 		return (NULL);
 	}
-	for (count = 0; count < ac; count++)
+
+	for (counter1 = 0, counter3 = 0; counter1 < ac; counter1++)
 	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
+		for (counter2 = 0; av[counter1][counter2] != '\0'; counter2++, counter3++)
 		{
-			ptr[count2] = av[count][count1];
-			count2++;
+			strTemp[counter3] = av[counter1][counter2];
 		}
-		ptr[count2] = '\n';
-		count2++;
+		strTemp[counter3] = '\n';
+		counter3++;
 	}
-	ptr[count2] = '\0';
-	return (ptr);
+	return (strTemp);
 }
