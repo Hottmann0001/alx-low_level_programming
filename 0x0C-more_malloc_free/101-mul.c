@@ -1,5 +1,7 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
 int find_len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
