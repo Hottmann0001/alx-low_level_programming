@@ -4,13 +4,13 @@
 /**
  *main -Entry point
  *Return: 0 (Success)
- *Description: return the current file directory 
+ *Description: return the current file directory
  */
 
-int main()
+int main(void)
 {
-printf("%s \n",__FILE__);
-return(0);
+printf("%s \n", __FILE__);
+return (0);
 
 
 }
