@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-
 /**
- *main -Entry point
- *Return: 0 (Success)
- *Description: return the current file directory
+ * main - prints the name of the file it was compiled from.
+ *
+ * Return: Always 0 (Success).
  */
 
 int main(void)
